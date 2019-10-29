@@ -7,7 +7,7 @@ var ww = 1024;
 var hh = 512;
 
 var zoom = 1;
-var location;
+var locationData;
 
 function preload() {
   // The clon and clat in this url are edited to be in the correct order.
@@ -16,7 +16,7 @@ function preload() {
     ww + 'x' + hh +
     'sk.eyJ1IjoibGVlajAzOSIsImEiOiJjazJiNW5xYTYyN2dmM2NwZWFnNG82c3RwIn0.5Q1Ozl16VYURw2eIfuwHuA');
  
-  location = loadStrings('Location.csv');
+  locationData = loadStrings('Location.csv');
 }
 
 function mercX(lon) {
