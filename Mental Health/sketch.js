@@ -13,8 +13,7 @@ function preload() {
   // The clon and clat in this url are edited to be in the correct order.
   mapimg = loadImage('https://api.mapbox.com/styles/v1/mapbox/dark-v9/static/' +
     clon + ',' + clat + ',' + zoom + '/' +
-    ww + 'x' + hh +
-    'sk.eyJ1IjoibGVlajAzOSIsImEiOiJjazJiNW5xYTYyN2dmM2NwZWFnNG82c3RwIn0.5Q1Ozl16VYURw2eIfuwHuA');
+    ww + 'x' + hh + '?access_token=sk.eyJ1IjoibGVlajAzOSIsImEiOiJjazJiNW5xYTYyN2dmM2NwZWFnNG82c3RwIn0.5Q1Ozl16VYURw2eIfuwHuA');
  
   locationData = loadStrings('Location.csv');
 }
